@@ -1,143 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tastéra Cakery</title>
 
-    <!-- Bootstrap CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/style.css" />
-    <!-- Favicon -->
-    <link rel="icon" href="images/Logo Kue.PNG" type="image/png" />
-  </head>
-  <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark">
-      <div class="container-fluid">
-        <a
-          class="navbar-brand fw-bold d-flex align-items-center me-4"
-          href="index.html"
-        >
-          <img
-            src="images/Logo Kue.PNG"
-            alt="Logo"
-            width="32"
-            height="32"
-            class="me-2"
-          />
-          Tastéra Cakery
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div
-          class="collapse navbar-collapse justify-content-between"
-          id="navbarNav"
-        >
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="products.html">Products</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="gallery.html">Gallery</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">About Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="order.html">Order</a>
-            </li>
-          </ul>
-          <div class="d-flex gap-2">
-            <a href="login.html" class="btn btn-outline-light btn-sm">Login</a>
-            <a href="register.html" class="btn btn-warning btn-sm">Register</a>
-          </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tastéra Cakery</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- Favicon -->
+  <link rel="icon" href="images/Logo Kue.PNG" type="image/png" />
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold d-flex align-items-center me-4" href="index.html">
+        <img src="images/Logo Kue.PNG" alt="Logo" width="32" height="32" class="me-2" />
+        Tastéra Cakery
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="products.html">Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="gallery.html">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="order.html">Order</a>
+          </li>
+        </ul>
+        <div class="d-flex gap-2">
+          <h5 id="userName" class="text-light" style="border-right: 1px solid white; padding-right: 10px;"></h5>
+          <a id="logout" class="text-light" href="#" style="display: none;">Logout</a>
+          <a id="login" href="login.php" class="btn btn-outline-light btn-sm">Login</a>
+          <a id="register" href="register.php" class="btn btn-warning btn-sm">Register</a>
         </div>
       </div>
-    </nav>
+    </div>
+  </nav>
 
-    <!-- Main Content -->
-    <main>
-      <!-- Hero Section -->
-      <section class="hero-section">
-        <div class="container">
-          <h1 class="display-4 fw-bold">Kue Kami, Cerita Kamu
-          </h1>
-          <p class="lead">
-            Temukan Kue Kami, untuk semua momen spesialmu. <br />
-            <a href="#products">Lihat produk kami</a>
-          </p>
-        </div>
-      </section>
-
-      <!-- Product Categories -->
-      <section id="products" class="py-5">
-        <div class="container">
-          <h2 class="section-heading">Produk Kami</h2>
-          <div class="row text-center">
-            <div class="col-md-4 mb-4">
-              <img
-                src="images/Logo Home Page/Logo Cake.png"
-                alt="Cake"
-                class="product-img"
-              />
-              <h5 class="mt-3">Cake</h5>
-            </div>
-            <div class="col-md-4 mb-4">
-              <img
-                src="images/Logo Home Page/Logo Cookies.png"
-                alt="Cookies"
-                class="product-img"
-              />
-              <h5 class="mt-3">Cookies</h5>
-            </div>
-            <div class="col-md-4 mb-4">
-              <img
-                src="images/Logo Home Page/Logo Hampers.png"
-                alt="hampers"
-                class="product-img"
-              />
-              <h5 class="mt-3">Hampers</h5>
-            </div>
-          </div>
-          <div
-            class="text-center mt-4 d-flex justify-content-center gap-3 flex-wrap"
-          >
-            <a
-              href="products.html"
-              class="btn btn-outline-dark btn-lg find-more-btn"
-              >Find More</a
-            >
-            <a href="order.html" class="btn order-btn btn-lg">Order Now</a>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <!-- Footer -->
-    <footer>
-      <div class="container text-center">
-        &copy; 2025 Tastéra Cakery — Sweet moments delivered.
+  <!-- Main Content -->
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="container">
+        <h1 class="display-4 fw-bold">Kue Kami, Cerita Kamu
+        </h1>
+        <p class="lead">
+          Temukan Kue Kami, untuk semua momen spesialmu. <br />
+          <a href="#products">Lihat produk kami</a>
+        </p>
       </div>
-    </footer>
+    </section>
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  </body>
+    <!-- Product Categories -->
+    <section id="products" class="py-5">
+      <div class="container">
+        <h2 class="section-heading">Produk Kami</h2>
+        <div class="row text-center">
+          <div class="col-md-4 mb-4">
+            <img src="images/Logo Home Page/Logo Cake.png" alt="Cake" class="product-img" />
+            <h5 class="mt-3">Cake</h5>
+          </div>
+          <div class="col-md-4 mb-4">
+            <img src="images/Logo Home Page/Logo Cookies.png" alt="Cookies" class="product-img" />
+            <h5 class="mt-3">Cookies</h5>
+          </div>
+          <div class="col-md-4 mb-4">
+            <img src="images/Logo Home Page/Logo Hampers.png" alt="hampers" class="product-img" />
+            <h5 class="mt-3">Hampers</h5>
+          </div>
+        </div>
+        <div class="text-center mt-4 d-flex justify-content-center gap-3 flex-wrap">
+          <a href="products.html" class="btn btn-outline-dark btn-lg find-more-btn">Find More</a>
+          <a href="order.html" class="btn order-btn btn-lg">Order Now</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container text-center">
+      &copy; 2025 Tastéra Cakery — Sweet moments delivered.
+    </div>
+  </footer>
+
+  <script src="js/loginlogout.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
 </html>
